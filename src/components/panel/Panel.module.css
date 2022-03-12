@@ -1,0 +1,68 @@
+.panel {
+    height: 250px;
+    margin-bottom: 20px;
+
+}
+
+.panel:hover {
+    background-color: rgba(56, 83, 255, 0.4);
+    color: white;
+}
+
+.title_placeholder {
+    display: block;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.icon {
+    width: 100px;
+}
+
+.input_wrapper {
+    height: 100%;
+    padding: 20px;
+}
+
+.input_placeholder {
+    margin-bottom: 10px;
+}
+
+.empty_placeholder {
+    height: 100%;
+    cursor: pointer;
+}
+
+.title {
+    display: block;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.weather {
+    height: 100%;
+    background: #c2e59c;  
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  
+    background: linear-gradient(to right, #64b3f4, #c2e59c); 
+}
+
+.edit {
+    width: 100px;
+    height: 40px!important;
+}
+
+.error {
+    color: #ff0000;
+    display: block;
+    width: 100%;
+    padding: 5px;
+}

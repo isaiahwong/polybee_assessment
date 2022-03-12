@@ -1,0 +1,9 @@
+.textfield {
+    height: 50px;
+    border: 2px solid #3E4FFF !important;
+    border-radius: 50px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+
+}

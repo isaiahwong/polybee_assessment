@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Polybee Technical Assessment 
+The following repo consist the features as requried from the document specificaiton.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">
+  <img src="./public/ss.png" alt="Screenshot" />
+</h3>
 
-## Available Scripts
+# Getting started
+### 1. Install deps
+```
+# install node modules
+$ npm i 
+```
+### 2. Add environment file
+```
+$ mv .env.copy .env
+```
+### 3. Update the environment variables
+Replace the YOUR_API_KEY with your custom open weather api key.
+```
+REACT_APP_WEATHER_API_KEY=YOUR_API_KEY
+REACT_APP_PANELS=9
+```
+### 4. Run application
+```
+$ npm start
+```
+# Technology
+The application was implemented with ReactJS
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Check list
+- [x] 1. The app consists of a grid of 9 panels. Every panel shows the weather data of one city. Initially, all panels would be empty.
+- [x] 2. On clicking on an empty panel, a text box is shown on the panel itself, asking the user to enter the city name. On entering the name, the panel now shows weather data for that city. 3. Every panel should have an “Edit” button - on clicking this, the user should be able to change the city shown in that panel.
+- [x] 4. If there was an error in getting the data (eg. wrong city name), the panel itself shows the error and the user can re-enter the city name.
+- [x] 5. Every panel has a background picture that describes the weather at the city - eg. sunny/rainy/cloudy.
+- [x] 6. The panels should be in a grid and responsive - the panels should align themselves in a row with respect to the screen size: for small screens - less number of panels in a row and for large screens - more number of panels in a row.
+Bonus Specifications :
+If you’ve implemented all of the features above, well done to you! Now here are some bonus specifications for those who are up for a challenge!
+- [x] 7. The weather data must be updated regularly - data displayed should be no more than 30 seconds old. This must not be done using a manual refresh button.
+- [x] 8. Enable offline use - on refreshing the page, even when offline, the page shows the last obtained weather data. To implement this, use either HTML5 LocalStorage or IndexedDB (use the Angular IndexedDB wrapper if using this).
